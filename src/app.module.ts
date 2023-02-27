@@ -6,7 +6,7 @@ import { StudentsModule } from "./students/students.module"
 import { UniversitiesModule } from "./universities/universities.module"
 import { ExamModule } from './exam/exam.module';
 @Module({
-  imports: [MongooseModule.forRoot("mongodb+srv://ahmtcntrn74:test12345Ahmetcan@cluster0.v5mvuw0.mongodb.net/?retryWrites=true&w=majority"), StudentsModule, UniversitiesModule, ExamModule],
+  imports: [MongooseModule.forRoot("mongodb://localhost:27017/nestjs"), StudentsModule, UniversitiesModule, ExamModule],
   controllers: [AppController],
   providers: [AppService],
 })
